@@ -29,7 +29,7 @@ While we do our best to help out in a timely basis, we don't have any promise ar
 We track functional issues in a variety of places for Azure Functions. If you have found an issue or have a feature request, please submit an issue to the below repositories.
 
 |Item|Description|Link|
-|-|-|-|
+|----|-----|-----|
 |Runtime|Script Host, Triggers & Bindings, Language Support|[File an Issue](https://github.com/Azure/azure-webjobs-sdk-script/issues)|
 |Portal|User Interface or Experience Issue|[File an Issue](https://github.com/ProjectKudu/AzureFunctionsPortal/issues)|
 |Templates|Code Issues with Creation Template|[File an Issue](https://github.com/Azure/azure-webjobs-sdk-templates/issues)|
