@@ -38,6 +38,17 @@ Before filing an issue, please check that it doesn't already exist. If you're no
 
 ## Helpful links
 
+### Get started
+
+ - [functions.azure.com](https://functions.azure.com)
+
+### Questions & Feedback
+
+ - [Azure Functions forum](https://social.msdn.microsoft.com/Forums/azure/en-US/home?forum=AzureFunctions)
+ - [`azure-functions` Stack Overflow tag](http://stackoverflow.com/questions/tagged/azure-functions)
+ - [Azure Functions feedback site](https://feedback.azure.com/forums/355860-azure-functions)
+ - [Follow @AzureFunctions twitter](https://twitter.com/azurefunctions)
+
 ### GitHub repositories
 
  - [Azure WebJobs SDK script](https://github.com/Azure/azure-webjobs-sdk-script/) - the Azure Functions runtime
