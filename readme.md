@@ -38,7 +38,7 @@ Before filing an issue, please check that it doesn't already exist. If you're no
 
 ## Helpful links
 
-GitHub repositories
+### GitHub repositories
 
  - [Azure WebJobs SDK script](https://github.com/Azure/azure-webjobs-sdk-script/) - the Azure Functions runtime
  - [Azure WebJobs SDK](https://github.com/Azure/azure-webjobs-sdk/) - the "core" of the Azure Functions runtime and many bindings
@@ -47,7 +47,7 @@ GitHub repositories
  - [Azure Functions templates](https://github.com/azure/azure-webjobs-sdk-templates) - the templates which show up the Azure Functions portal
  - [Azure Functions samples](https://github.com/azure/azure-webjobs-sdk-script-samples) - repository for some samples on how the runtime works
  
-Documentation
+### Documentation
 
  - [Azure Functions Overview](https://azure.microsoft.com/en-us/documentation/articles/functions-overview/)
  - [Azure Functions Concepts](https://azure.microsoft.com/en-us/documentation/articles/functions-reference/)
@@ -62,6 +62,6 @@ Documentation
  - [Scaling a Function](https://azure.microsoft.com/en-us/documentation/articles/functions-scale/)
  - [Building the Azure Functions runtime locally](https://github.com/Azure/azure-webjobs-sdk-script/wiki)
  
-Samples
- - [Samples page on wiki](https://github.com/Azure/AzureFunctions/wiki/Samples)
- - [Blogs](https://github.com/Azure/AzureFunctions/wiki/Blogs)
+### Samples
+ - [List of samples](https://github.com/Azure/AzureFunctions/wiki/Samples)
+ - [List of blogs](https://github.com/Azure/AzureFunctions/wiki/Blogs)
