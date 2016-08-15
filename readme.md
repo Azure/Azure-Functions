@@ -53,7 +53,7 @@ Before filing an issue, please check that it doesn't already exist. If you're no
 
  - [Azure WebJobs SDK script](https://github.com/Azure/azure-webjobs-sdk-script/) - the Azure Functions runtime
  - [Azure WebJobs SDK](https://github.com/Azure/azure-webjobs-sdk/) - the "core" of the Azure Functions runtime and many bindings
- - [Azure WebJobs SDK extensions](https://github.com/Azure/azure-webjobs-sdk-script-extensions/) - the repositories of many bindings
+ - [Azure WebJobs SDK extensions](https://github.com/Azure/azure-webjobs-sdk-extensions/) - the repositories of many bindings
  - [Azure Functions Portal](https://github.com/projectkudu/AzureFunctionsPortal) - the UX for the Functions development portal
  - [Azure Functions templates](https://github.com/azure/azure-webjobs-sdk-templates) - the templates which show up the Azure Functions portal
  - [Azure Functions samples](https://github.com/azure/azure-webjobs-sdk-script-samples) - repository for some samples on how the runtime works
