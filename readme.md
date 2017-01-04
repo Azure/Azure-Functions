@@ -32,6 +32,7 @@ We track functional issues in a variety of places for Azure Functions. If you ha
 |----|-----|-----|
 |Documentation|Docs for Azure Functions features + getting started|[File an Issue](https://github.com/azure/azure-functions/issues)|
 |Runtime|Script Host, Triggers & Bindings, Language Support|[File an Issue](https://github.com/Azure/azure-webjobs-sdk-script/issues)|
+|CLI|Command line interface|[File an Issue](https://github.com/Azure/azure-functions-cli/issues)|
 |Portal|User Interface or Experience Issue|[File an Issue](https://github.com/ProjectKudu/AzureFunctionsPortal/issues)|
 |Templates|Code Issues with Creation Template|[File an Issue](https://github.com/Azure/azure-webjobs-sdk-templates/issues)|
 
@@ -55,6 +56,7 @@ Before filing an issue, please check that it doesn't already exist. If you're no
  - [Azure WebJobs SDK script](https://github.com/Azure/azure-webjobs-sdk-script/) - the Azure Functions runtime
  - [Azure WebJobs SDK](https://github.com/Azure/azure-webjobs-sdk/) - the "core" of the Azure Functions runtime and many bindings
  - [Azure WebJobs SDK extensions](https://github.com/Azure/azure-webjobs-sdk-extensions/) - the repositories of many bindings
+ - [Azure Functions CLI](https://github.com/Azure/azure-functions-cli) - the command line tool for Azure Functions
  - [Azure Functions Portal](https://github.com/projectkudu/AzureFunctionsPortal) - the UX for the Functions development portal
  - [Azure Functions templates](https://github.com/azure/azure-webjobs-sdk-templates) - the templates which show up the Azure Functions portal
  - [Azure Functions samples](https://github.com/azure/azure-webjobs-sdk-script-samples) - repository for some samples on how the runtime works
