@@ -60,6 +60,7 @@ Before filing an issue, please check that it doesn't already exist. If you're no
  - [Azure Functions UX](https://github.com/azure/azure-functions-ux) - the UX for the Functions development portal
  - [Azure Functions templates](https://github.com/azure/azure-webjobs-sdk-templates) - the templates which show up the Azure Functions portal
  - [Azure Functions samples](https://github.com/azure/azure-webjobs-sdk-script-samples) - repository for some samples on how the runtime works
+ - [Azure Functions VS Tooling](https://github.com/Azure/azure-functions-vs-build-sdk) - msbuild tasks for precompiled functions
  
 ### Documentation
 
