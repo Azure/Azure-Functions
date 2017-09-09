@@ -5,4 +5,4 @@ on the official Visual Studio extension Marketplace.
 
 ## 15.0.30901.0
 
-- Fixed bug where adding a Function would change project SDK version to 1.0.
+- Fixed bug where adding a Function would change referenced SDK version to 1.0.0.
