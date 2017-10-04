@@ -32,7 +32,7 @@ We track functional issues in a variety of places for Azure Functions. If you ha
 |----|-----|-----|
 |Documentation|Docs for Azure Functions features + getting started|[File an Issue](https://github.com/azure/azure-functions/issues)|
 |Runtime|Script Host, Triggers & Bindings, Language Support|[File an Issue](https://github.com/Azure/azure-webjobs-sdk-script/issues)|
-|CLI|Command line interface|[File an Issue](https://github.com/Azure/azure-functions-cli/issues)|
+|Core Tools|Command line interface for local development. |[File an Issue](https://github.com/Azure/azure-functions-cli/issues)|
 |Portal|User Interface or Experience Issue|[File an Issue](https://github.com/ProjectKudu/AzureFunctionsPortal/issues)|
 |Templates|Code Issues with Creation Template|[File an Issue](https://github.com/Azure/azure-webjobs-sdk-templates/issues)|
 
