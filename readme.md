@@ -78,5 +78,5 @@ Before filing an issue, please check that it doesn't already exist. If you're no
  - [Building the Azure Functions runtime locally](https://github.com/Azure/azure-webjobs-sdk-script/wiki)
  
 ### Samples
- - [List of samples](https://github.com/Azure/AzureFunctions/wiki/Samples)
+ - [List of samples](https://github.com/Azure/Azure-Functions/wiki/Samples-and-contents)
  - [List of blogs](https://github.com/Azure/AzureFunctions/wiki/Blogs)
