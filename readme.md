@@ -4,6 +4,8 @@ Azure Functions is an event driven, compute-on-demand experience that extends th
 
 This repository acts as a directory for folks looking for the various resources we have for Azure Functions.
 
+Link to this page in case you want to share it: [https://aka.ms/func-ai](https://aka.ms/func-ai)
+
 ## Get Started with Azure Functions
 
 To get started with Azure Functions, you can visit [functions.azure.com](https://functions.azure.com) and click on the green Get Started button. If you need a trial Azure subscription, there is also a link on that page.
