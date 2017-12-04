@@ -6,7 +6,6 @@ on the official Visual Studio extension Marketplace.
 ## 15.0.31201.0
 
 - Remote debugging now works with V2 projects
--	Updated template selector in new project dialog to say ".NET Core" instead of ".NET Standard"
 
 ## 15.0.31114.0
 
