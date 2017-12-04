@@ -4,10 +4,12 @@ These are the changes to each version that has been released
 on the official Visual Studio extension Marketplace.
 
 ## 15.0.31201.0
+Minimum required Visual Studio version: VS2017 15.5
 
 - Remote debugging now works with V2 projects
 
 ## 15.0.31114.0
+Minimum required Visual Studio version: VS2017 15.5
 
 - .NET Core support
 - New Functions project dialog
