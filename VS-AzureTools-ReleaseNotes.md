@@ -3,6 +3,12 @@
 These are the changes to each version that has been released
 on the official Visual Studio extension Marketplace.
 
+## 15.0.40108.0
+Minimum required Visual Studio version: VS2017 15.5
+
+- Fix for bug in remote debugging of V2 Function
+- Fix to Add New Function button
+
 ## 15.0.31201.0
 Minimum required Visual Studio version: VS2017 15.5
 
