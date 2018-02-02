@@ -54,12 +54,12 @@ Before filing an issue, please check that it doesn't already exist. If you're no
 
 ### GitHub repositories
 
- - [Azure WebJobs SDK script](https://github.com/Azure/azure-webjobs-sdk-script/) - the Azure Functions runtime
+ - [Azure Functions Host](https://github.com/Azure/azure-functions-host/) - the Azure Functions runtime/host
  - [Azure WebJobs SDK](https://github.com/Azure/azure-webjobs-sdk/) - the "core" of the Azure Functions runtime and many bindings
  - [Azure WebJobs SDK extensions](https://github.com/Azure/azure-webjobs-sdk-extensions/) - the repositories of many bindings
- - [Azure Functions Core Tools](https://github.com/Azure/azure-functions-cli) - the command line tool for Azure Functions
+ - [Azure Functions Core Tools](https://github.com/Azure/azure-functions-core-tools) - the command line tool for Azure Functions
  - [Azure Functions UX](https://github.com/azure/azure-functions-ux) - the UX for the Functions development portal
- - [Azure Functions templates](https://github.com/azure/azure-webjobs-sdk-templates) - the templates which show up the Azure Functions portal
+ - [Azure Functions templates](https://github.com/azure/azure-functions-templates) - the templates which show up in the Azure Functions portal, Visual Studio, Visual Studio Code, etc
  - [Azure Functions samples](https://github.com/azure/azure-webjobs-sdk-script-samples) - repository for some samples on how the runtime works
  - [Azure Functions VS Tooling](https://github.com/Azure/azure-functions-vs-build-sdk) - msbuild tasks for precompiled functions
  
