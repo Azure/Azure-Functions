@@ -3,7 +3,7 @@
 These are the changes to each version that has been released
 on the official Visual Studio extension Marketplace.
 
-# 15.x.y.z
+# 15.0.40322.0
 Minimum required Visual Studio version: VS2017 15.6
 
 - Fix a bug where running and publishing a v2 Functions app with the latest runtime failed
