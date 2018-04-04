@@ -31,11 +31,11 @@ We track functional issues in a variety of places for Azure Functions. If you ha
 |Item|Description|Link|
 |----|-----|-----|
 |Documentation|Docs for Azure Functions features + getting started|[File an Issue](https://github.com/azure/azure-functions/issues)|
-|Runtime|Script Host, Triggers & Bindings, Language Support|[File an Issue](https://github.com/Azure/azure-webjobs-sdk-script/issues)|
-|Core Tools|Command line interface for local development|[File an Issue](https://github.com/Azure/azure-functions-cli/issues)|
+|Runtime|Script Host, Triggers & Bindings, Language Support|[File an Issue](https://github.com/Azure/azure-functions-host/issues)|
+|Core Tools|Command line interface for local development|[File an Issue](https://github.com/Azure/azure-functions-core-tools/issues)|
 |Dev Tools|Visual Studio and VS Code|[File an Issue](https://github.com/Azure/azure-functions/issues)|
-|Portal|User Interface or Experience Issue|[File an Issue](https://github.com/ProjectKudu/AzureFunctionsPortal/issues)|
-|Templates|Code Issues with Creation Template|[File an Issue](https://github.com/Azure/azure-webjobs-sdk-templates/issues)|
+|Portal|User Interface or Experience Issue|[File an Issue](https://github.com/azure/azure-functions-ux/issues)|
+|Templates|Code Issues with Creation Template|[File an Issue](https://github.com/Azure/azure-functions-templates/issues)|
 
 Before filing an issue, please check that it doesn't already exist. If you're not sure if you should file an issue, you can open up an [MSDN forum question](https://social.msdn.microsoft.com/Forums/azure/en-US/home?forum=AzureFunctions). We also have a [uservoice feedback site](https://feedback.azure.com/forums/355860-azure-functions) which we can track your feature requests through.
 
