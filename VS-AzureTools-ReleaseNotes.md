@@ -3,11 +3,18 @@
 These are the changes to each version that has been released
 on the official Visual Studio extension Marketplace.
 
+# 15.0.40405.0
+Minimum required Visual Studio version: VS2017 15.6
+
+- Updates Azure Functions V1 templates to 1.0.3.10178
+- Updates Azure Functions V2 templates to 2.0.0-beta-10177
+- Updates Azure Functions Core Tools to  2.0.1-beta.25
+
 # 15.0.40322.0
 Minimum required Visual Studio version: VS2017 15.6
 
 - Fix a bug where running and publishing a v2 Functions app with the latest runtime failed
-- Start the Azure Storage Emulator on debug if it is specified in local development settings, with a message to ask you to start manually if we cannot start it
+- Starts the Azure Storage Emulator on debug if it is specified in local development settings, with a message to ask you to start manually if we cannot start it
 - Recognize if you do not have .NET Framework 4.7.1 and add a message telling you where to install it if it cannot be detected
 
 ## 15.0.40108.0
