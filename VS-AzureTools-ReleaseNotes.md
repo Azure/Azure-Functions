@@ -6,7 +6,7 @@ on the official Visual Studio extension Marketplace.
 # Known Issues
 ## Visual Studio 15.6
    * ### Issue:
-     Create a new App Service Plan during publish from Visual Studio fails with a message like "The resource '<storage_account>' under resource group '<your_resource_group>' was not found.
+     Creating a new App Service Plan from Visual Studio fails with a message similar to "The resource '<storage_account>' under resource group '<your_resource_group>' was not found.
    * ### Workaround
      This error occurs when you select a Storage Account that is in a different resource group than the Resource Group selection in the dialog.  Either choose the same resource group in the dialog, or create a new storage account.  
 
