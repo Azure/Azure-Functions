@@ -10,14 +10,15 @@ on the official Visual Studio extension Marketplace.
    * ### Workaround
    This error occurs when you select a Storage Account that is in a different resource group than the Resource Group selection in the dialog.  Either choose the same resource group in the dialog, or create a new storage account.  
 
-# 15.0.40405.0
+# Release Notes
+## 15.0.40405.0
 Minimum required Visual Studio version: VS2017 15.6
 
 - Updates Azure Functions V1 templates to 1.0.3.10178
 - Updates Azure Functions V2 templates to 2.0.0-beta-10177
 - Updates Azure Functions Core Tools to  2.0.1-beta.25
 
-# 15.0.40322.0
+## 15.0.40322.0
 Minimum required Visual Studio version: VS2017 15.6
 
 - Fix a bug where running and publishing a v2 Functions app with the latest runtime failed
