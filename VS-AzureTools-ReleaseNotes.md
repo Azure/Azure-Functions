@@ -11,6 +11,11 @@ on the official Visual Studio extension Marketplace.
      This error occurs when you select a Storage Account that is in a different resource group than the Resource Group selection in the dialog.  Either choose the same resource group in the dialog, or create a new storage account.  
 
 # Release Notes
+## 15.0.40502.0
+Minimum required Visual Studio version: VS2017 15.6
+
+- Tools now consume a feed which keeps templates, build tools, and the runtime up to date whenever there is a change made in the service.
+
 ## 15.0.40405.0
 Minimum required Visual Studio version: VS2017 15.6
 
