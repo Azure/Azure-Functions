@@ -4,6 +4,12 @@ These are the changes to each version that has been released
 on the official Visual Studio extension Marketplace.
 
 # Known Issues
+
+## Latest release
+
+    * **Issue:** Queue Trigger and Blob Trigger are not available trigger types immediately after File > New Project > Azure Functions.
+    * **Workaround:** Add these trigger types by right-clicking on the project in Solution Explorer and select Add > New Azure Function.
+
 ## Visual Studio 15.6
    * ### Issue:
      Creating a new App Service Plan from Visual Studio fails with a message similar to "The resource '<storage_account>' under resource group '<your_resource_group>' was not found.
@@ -11,6 +17,11 @@ on the official Visual Studio extension Marketplace.
      This error occurs when you select a Storage Account that is in a different resource group than the Resource Group selection in the dialog.  Either choose the same resource group in the dialog, or create a new storage account.  
 
 # Release Notes
+## 15.0.40617.0
+Minimum required Visual Studio version: VS2017 15.6
+
+- The tools will run v2 Azure Functions locally against .NET Core 2.1.
+
 ## 15.0.40502.0
 Minimum required Visual Studio version: VS2017 15.6
 
