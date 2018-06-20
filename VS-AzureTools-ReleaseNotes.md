@@ -9,6 +9,8 @@ on the official Visual Studio extension Marketplace.
 
     * **Issue:** Queue Trigger and Blob Trigger are not available trigger types immediately after File > New Project > Azure Functions.
     * **Workaround:** Add these trigger types by right-clicking on the project in Solution Explorer and select Add > New Azure Function.
+    * **Issue:** The VSIX for the functions tools will not work with VS 2017 15.8 Preview 3 or higher.
+    * **Workaround:** Only use the VSIX for 15.6 or 15.7. It is being updated to work with 15.8 when that version of Visual Studio releases.
 
 ## Visual Studio 15.6
    * ### Issue:
