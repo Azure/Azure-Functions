@@ -12,13 +12,16 @@ on the official Visual Studio extension Marketplace.
 * **Issue:** The VSIX for the functions tools will not work with VS 2017 15.8 Preview relases.
 * **Workaround:** Only use the VSIX for 15.6 or 15.7. It is being updated to work with 15.8 when that version of Visual Studio releases.
 
-## Visual Studio 15.6
+## Visual Studio 15.6 (fixed in 15.7 and later)
    * ### Issue:
      Creating a new App Service Plan from Visual Studio fails with a message similar to "The resource '<storage_account>' under resource group '<your_resource_group>' was not found.
    * ### Workaround
      This error occurs when you select a Storage Account that is in a different resource group than the Resource Group selection in the dialog.  Either choose the same resource group in the dialog, or create a new storage account.  
 
 # Release Notes
+## 15.10.2009.0
+- Fixes issues with publishing to Azure failing prematurely
+
 ## 15.0.40617.0
 Minimum required Visual Studio version: VS2017 15.6
 
