@@ -58,6 +58,9 @@ Before filing an issue, please check that it doesn't already exist. If you're no
  - [Azure WebJobs SDK](https://github.com/Azure/azure-webjobs-sdk/) - the "core" of the Azure Functions runtime and many bindings
  - [Azure WebJobs SDK extensions](https://github.com/Azure/azure-webjobs-sdk-extensions/) - the repositories of many bindings
  - [Azure Functions Core Tools](https://github.com/Azure/azure-functions-core-tools) - the command line tool for Azure Functions
+ - [Azure Functions NodeJS Worker](https://github.com/Azure/azure-functions-nodejs-worker) - support for running JavaScript functions
+ - [Azure Functions Java Worker](https://github.com/Azure/azure-functions-java-worker) - support for running Java functions
+ - [Azure Functions Python Worker](https://github.com/Azure/azure-functions-python-worker) - support for running Python functions
  - [Azure Functions UX](https://github.com/azure/azure-functions-ux) - the UX for the Functions development portal
  - [Azure Functions templates](https://github.com/azure/azure-functions-templates) - the templates which show up in the Azure Functions portal, Visual Studio, Visual Studio Code, etc
  - [Azure Functions samples](https://github.com/azure/azure-webjobs-sdk-script-samples) - repository for some samples on how the runtime works
