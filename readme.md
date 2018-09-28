@@ -36,6 +36,7 @@ We track functional issues in a variety of places for Azure Functions. If you ha
 |Dev Tools|Visual Studio and VS Code|[File an Issue](https://github.com/Azure/azure-functions/issues)|
 |Portal|User Interface or Experience Issue|[File an Issue](https://github.com/azure/azure-functions-ux/issues)|
 |Templates|Code Issues with Creation Template|[File an Issue](https://github.com/Azure/azure-functions-templates/issues)|
+|Azure CLI|Create and manage function apps in Azure (`az functionapp`) | [File and Issue](https://github.com/Azure/azure-cli/issues) |
 
 Before filing an issue, please check that it doesn't already exist. If you're not sure if you should file an issue, you can open up an [MSDN forum question](https://social.msdn.microsoft.com/Forums/azure/en-US/home?forum=AzureFunctions). We also have a [uservoice feedback site](https://feedback.azure.com/forums/355860-azure-functions) which we can track your feature requests through.
 
