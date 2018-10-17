@@ -5,20 +5,19 @@ on the official Visual Studio extension Marketplace.
 
 # Known Issues
 
-## Latest release
-
-* **Issue:** Queue Trigger and Blob Trigger are not available trigger types immediately after File > New Project > Azure Functions.
-* **Workaround:** Add these trigger types by right-clicking on the project in Solution Explorer and select Add > New Azure Function.
-* **Issue:** The VSIX for the functions tools will not work with VS 2017 15.8 Preview relases.
-* **Workaround:** Only use the VSIX for 15.6 or 15.7. It is being updated to work with 15.8 when that version of Visual Studio releases.
-
-## Visual Studio 15.6 (fixed in 15.7 and later)
-   * ### Issue:
-     Creating a new App Service Plan from Visual Studio fails with a message similar to "The resource '<storage_account>' under resource group '<your_resource_group>' was not found.
-   * ### Workaround
-     This error occurs when you select a Storage Account that is in a different resource group than the Resource Group selection in the dialog.  Either choose the same resource group in the dialog, or create a new storage account.  
+* None
 
 # Release Notes
+## 15.10.2046.0
+- Support for indicating the runtime that functions requires (.NET Framework version/.NET Core version)
+- String update to not show the version number when downloading a CLI
+- Defaulting to v2 instead of v1 in a clean install
+- The ability to remove app settings
+- Changes to the way the functions runtime version is set
+- Fixes to ZIP deploy
+- Fix to namespace generation during item template creation
+- Support for detecting .NET Framework 4.7.2
+
 ## 15.10.2009.0
 - Fixes issues with publishing to Azure failing prematurely
 
