@@ -22,7 +22,7 @@ az group create -l southcentralus -n functions-premium
 Create a plan with 2 instances running always (number-of-workers -- must be at least 2 at this phase of preview)
 
 ```bash
-az functionapp plan create-elastic -g functions-premium -n functions-premium-plan -l southcentralus --number-of-workers 2 --sku EP3
+az functionapp plan create -g functions-premium -n functions-premium-plan -l southcentralus --number-of-workers 2 --sku EP3
 ```
 
 ### 5. Set the plan to scale out to 20 workers
