@@ -10,8 +10,8 @@
 az extension add --source https://functionspremium.blob.core.windows.net/sdk/functionapp-0.0.1-py2.py3-none-any.whl
 ``` 
 
-**Note:** If you already have the functionapp extension installed you will need to remove it using ```bash
-az extension remove -n functionapp``` and then install the preview CLI extension above.
+**Note:** If you already have the functionapp extension installed you will need to remove it using ```az extension remove -n functionapp``` and then install the preview CLI extension above.
+
 
 ### 3. Create a resource group in supported region (optional)
 
