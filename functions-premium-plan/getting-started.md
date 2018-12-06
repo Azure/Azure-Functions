@@ -2,6 +2,8 @@
 
 🚧 In order to use the Azure Functions Premium Plan private preview your subscription needs to be added to an allowlist.  Please apply for access via [http://aka.ms/functionspremium](http://aka.ms/functionspremium). 🚧
 
+If you run into issues check our [troubleshooting docs](./troubleshooting.md)
+
 ### 1. Install the [Azure CLI](https://docs.microsoft.com/en-us/cli/azure/install-azure-cli?view=azure-cli-latest) or use the [Azure Cloud Shell](https://docs.microsoft.com/en-us/azure/cloud-shell/overview)
 
 ### 2. Install the preview CLI extension
