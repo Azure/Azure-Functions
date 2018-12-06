@@ -4,7 +4,9 @@
 
 If you run into issues check our [troubleshooting docs](./troubleshooting.md)
 
-### 1. Install the [Azure CLI](https://docs.microsoft.com/en-us/cli/azure/install-azure-cli?view=azure-cli-latest)(2.0.53 or higher) or use the [Azure Cloud Shell](https://docs.microsoft.com/en-us/azure/cloud-shell/overview)
+### 1. Install the [Azure CLI](https://docs.microsoft.com/en-us/cli/azure/install-azure-cli?view=azure-cli-latest) or use the [Azure Cloud Shell](https://docs.microsoft.com/en-us/azure/cloud-shell/overview)
+ 
+Ensure your Azure CLI is 2.0.53 or higher if running locally.
 
 ### 2. Install the preview CLI extension
 
