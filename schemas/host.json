@@ -16,7 +16,7 @@
         },
         "flushTimeout": {
           "description": "The aggregation duration. The aggregator will flush periodically based on this value.",
-          "pattern": "^\\d\\d:\\d\\d:\\d\\d$",
+          "pattern": "^(?:[01]\\d|2[0-3]):[0-5]\\d:[0-5]\\d$",
           "default": "00:00:30"
         }
       },
@@ -37,7 +37,7 @@
       "oneOf": [
         {
           "type": "string",
-          "pattern": "^\\d\\d:\\d\\d:\\d\\d$"
+          "pattern": "^(?:[01]\\d|2[0-3]):[0-5]\\d:[0-5]\\d$"
         },
         { "enum": [ null ] }
       ]
@@ -59,27 +59,27 @@
       "properties": {
         "lockPeriod": {
           "description": "The period that function level locks are taken for (they will auto renew).",
-          "pattern": "^\\d\\d:\\d\\d:\\d\\d$",
+          "pattern": "^(?:[01]\\d|2[0-3]):[0-5]\\d:[0-5]\\d$",
           "default": "00:00:15"
         },
         "listenerLockPeriod": {
           "description": "The period that listener locks are taken for.",
-          "pattern": "^\\d\\d:\\d\\d:\\d\\d$",
+          "pattern": "^(?:[01]\\d|2[0-3]):[0-5]\\d:[0-5]\\d$",
           "default": "00:01:00"
         },
         "listenerLockRecoveryPollingInterval": {
           "description": "The time interval used for listener lock recovery if a listener lock couldn't be acquired on startup.",
-          "pattern": "^\\d\\d:\\d\\d:\\d\\d$",
+          "pattern": "^(?:[01]\\d|2[0-3]):[0-5]\\d:[0-5]\\d$",
           "default": "00:01:00"
         },
         "lockAcquisitionTimeout": {
           "description": "The maximum amount of time the runtime will try to acquire a lock.",
-          "pattern": "^\\d\\d:\\d\\d:\\d\\d$",
+          "pattern": "^(?:[01]\\d|2[0-3]):[0-5]\\d:[0-5]\\d$",
           "default": "00:01:00"
         },
         "lockAcquisitionPollingInterval": {
           "description": "The interval between lock acquisition attempts.",
-          "pattern": "^\\d\\d:\\d\\d:\\d\\d$"
+          "pattern": "^(?:[01]\\d|2[0-3]):[0-5]\\d:[0-5]\\d$"
         }
       },
       "additionalProperties": false
@@ -96,12 +96,12 @@
         },
         "healthCheckInterval": {
           "description": "The time interval between the periodic background health checks",
-          "pattern": "^\\d\\d:\\d\\d:\\d\\d$",
+          "pattern": "^(?:[01]\\d|2[0-3]):[0-5]\\d:[0-5]\\d$",
           "default": "00:00:10"
         },
         "healthCheckWindow": {
           "description": "A sliding time window used in conjunction with the healthCheckThreshold setting.",
-          "pattern": "^\\d\\d:\\d\\d:\\d\\d$",
+          "pattern": "^(?:[01]\\d|2[0-3]):[0-5]\\d:[0-5]\\d$",
           "default": "00:02:00"
         },
         "healthCheckThreshold": {
@@ -174,7 +174,7 @@
         },
         "visibilityTimeout": {
           "description": "The visibility timeout that will be applied to messages that fail processing.",
-          "pattern": "^\\d\\d:\\d\\d:\\d\\d$",
+          "pattern": "^(?:[01]\\d|2[0-3]):[0-5]\\d:[0-5]\\d$",
           "default": "00:00:00"
         }
       },
@@ -192,7 +192,7 @@
         "receiveTimeout": {
           "description": "the timespan in which the user is willing to wait when the event processor is performing a receive operation.",
           "type": "string",
-          "pattern": "^\\d\\d:\\d\\d:\\d\\d$",
+          "pattern": "^(?:[01]\\d|2[0-3]):[0-5]\\d:[0-5]\\d$",
           "default": "00:01:00"
         },
         "enableReceiverRuntimeMetric": {
@@ -341,7 +341,7 @@
             "autoRenewTimeout": {
               "description": "The maximum duration within which the Service Bus message lock will be renewed automatically.",
               "type": "string",
-              "pattern": "^\\d\\d:\\d\\d:\\d\\d$",
+              "pattern": "^(?:[01]\\d|2[0-3]):[0-5]\\d:[0-5]\\d$",
               "default": "00:05:00"
             },
             "autoComplete": {
@@ -453,10 +453,10 @@
                       "type": "integer",
                       "default": 16
                     },
-                    "maxAutoRenewTimeout": {
+                    "maxAutoRenewDuration": {
                       "description": "The maximum duration within which the Service Bus message lock will be renewed automatically.",
                       "type": "string",
-                      "pattern": "^\\d\\d:\\d\\d:\\d\\d$",
+                      "pattern": "^(?:[01]\\d|2[0-3]):[0-5]\\d:[0-5]\\d$",
                       "default": "00:05:00"
                     },
                     "autoComplete": {
