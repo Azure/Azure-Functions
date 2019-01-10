@@ -4,5 +4,6 @@
 
 * [Overview](overview.md)
 * [Getting Started](getting-started.md)
+* [Troubleshooting](troubleshooting.md)
 
 [File an issue](https://github.com/azure/azure-functions/issues)
