@@ -1,6 +1,10 @@
 # Troubleshooting Elastic Premium Plan Functions 
 Thank you for participating in the Elastic Premium preview! All of the frequently hit bugs will be catologued here.
 
+## CLI Command Debugging
+
+All of the commands support the `--debug` paramater, which gives you much more information. Please include the debug output with any github issues or emails.
+
 ## Creating a premium plan fails with "invalid status code: Conflict"
 
 **Command:** `az functionapp plan create ***`
@@ -20,7 +24,3 @@ If you run the command with the `--debug` flag, you should see a verbose message
 If you run the command with the `--debug` flag, you should see a verbose message that includes the text `"Code":"BadRequest","Message":"ElasticPremium pricing tier is not enabled for this subscription."`
 
 **Solution:** Your current subscription is not enrolled in the Elastic Premium preview. If you have [applied to the preview](http://aka.ms/functionspremium) you will need to wait to receive a welcome email before creating a plan. If you have received a welcome email, check to make sure you are selecting the correct subscription with 'az account show'. 
-
-## CLI Command Debugging
-
-All of the commands support the `--debug` paramater, which gives you much more information. Please include the debug output with any github issues or emails.
