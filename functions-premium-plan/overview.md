@@ -53,6 +53,9 @@ Below is the currently supported regions for the preview.  If you would like to 
 |Region|
 |--|
 |South Central US|
+|West Europe|
+|Australia East|
+|Australia Southeast|
 
 ## Configuration
 
