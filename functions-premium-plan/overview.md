@@ -26,7 +26,7 @@ The number of workers of a plan can be set - which will set a reserved set of wo
 
 #### Plan - Billing & Number of Workers
 
-The number of workers are the number of workers that will be reserved specifically for you and your apps.  The minimum workers for a premium plan is 1, and the maximum is 20.  These workers are specifically reserved and running for you 24x7. The workers will be intelligently used as described in the [high density section](#high-density-computing).  **You will be charged for each worker while it is reserved for you.**
+The number of workers are the number of workers that will be reserved specifically for you and your apps.  The minimum workers for a premium plan is 2, and the maximum is 20.  These workers are specifically reserved and running for you 24x7. The workers will be intelligently used as described in the [high density section](#high-density-computing).  **You will be charged for each worker while it is reserved for you.**
 
 Today you can select from 3 worker sizes that will be used across your worker count and your max scaled out workers.  
 
