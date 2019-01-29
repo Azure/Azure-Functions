@@ -53,3 +53,10 @@ az functionapp create -g functions-premium -s <storage_name> -p functions-premiu
 ### 7. Go build awesome stuff 😎
 
 For feedback or questions, please email functionspremium@microsoft.com
+
+
+### 8. Delete your resources
+
+Reserved instances charge you 24x7 for their full CPU and memory to be reserved to your app. When you are done testing, please delete all resources to avoid unneccessary charges.
+
+The easiest way to do this is to delete the entire resource group containing your elastic premium plan, apps, and storage accounts
