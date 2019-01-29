@@ -60,3 +60,7 @@ For feedback or questions, please email functionspremium@microsoft.com
 Reserved instances charge you 24x7 for their full CPU and memory to be reserved to your app. When you are done testing, please delete all resources to avoid unneccessary charges.
 
 The easiest way to do this is to delete the entire resource group containing your elastic premium plan, apps, and storage accounts
+
+```bash
+az group delete -n functions-premium
+```
