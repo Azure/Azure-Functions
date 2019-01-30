@@ -6,4 +6,4 @@
 * [Getting Started](getting-started.md)
 * [Troubleshooting](troubleshooting.md)
 
-[File an issue](https://github.com/azure/azure-functions/issues)
+[Check known issues or file a new issue](https://github.com/azure/azure-functions/issues?q=is%3Aopen+is%3Aissue+label%3Apremium-plan)
