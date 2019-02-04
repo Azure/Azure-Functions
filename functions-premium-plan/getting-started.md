@@ -26,10 +26,10 @@ az group create -l southcentralus -n functions-premium
 ```
 
 ### 4. Create an Azure Functions Premium Plan
-Create a plan with 1 instance running always (number-of-workers)
+Create a plan with 2 instances running always (number-of-workers)
 
 ```bash
-az functionapp plan create -g functions-premium -n functions-premium-plan -l southcentralus --number-of-workers 1 --sku EP1
+az functionapp plan create -g functions-premium -n functions-premium-plan -l southcentralus --number-of-workers 2 --sku EP1
 ```
 
 ### 5. Set the plan to scale out to 20 workers
