@@ -3,7 +3,7 @@ name: Azure Functions premium plan
 about: Create a report to help us improve
 title: "[Premium]"
 labels: premium-plan
-assignees: jeffhollan, alexkarcher-msft
+assignees: alexkarcher-msft, jeffhollan
 
 ---
 
