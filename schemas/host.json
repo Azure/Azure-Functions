@@ -180,6 +180,43 @@
       },
       "additionalProperties": false
     },
+    
+    "queues-extension-v2": {
+      "description": "Configuration settings for 'queue' triggers.",
+      "type": "object",
+      "properties": {
+        "maxPollingInterval": {
+          "type": "string",
+          "pattern": "^[0-9][0-9]:[0-9][0-9]:[0-9][0-9](?:\\.[0-9]+)?$",
+          "default": "00:00:02",
+          "description": "The maximum interval between queue polls. Minimum is 00:00:00.100 (100 ms)."
+        },
+        "visibilityTimeout": {
+          "type": "string",
+          "pattern": "^[0-9][0-9]:[0-9][0-9]:[0-9][0-9](?:\\.[0-9]+)?$",
+          "default": "00:00:00",
+          "description": "The time interval between retries when processing of a message fails."
+        },
+        "batchSize": {
+          "description": "The number of queue messages that the Functions runtime retrieves simultaneously and processes in parallel. When the number being processed gets down to the `newBatchThreshold`, the runtime gets another batch and starts processing those messages. So the maximum number of concurrent messages being processed per function is `batchSize` plus `newBatchThreshold`. This limit applies separately to each queue-triggered function. ",
+          "type": "integer",
+          "maximum": 32,
+          "minimum": 1,
+          "default": 16
+        },
+        "maxDequeueCount": {
+          "description": "The number of times to try processing a message before moving it to the poison queue",
+          "type": "integer",
+          "default": 5
+        },
+        "newBatchThreshold": {
+          "description": "The threshold at which a new batch of messages will be fetched. The default is batchSize/2.",
+          "type": "integer"
+        }
+      },
+      "additionalProperties": false
+    },
+    
     "durableTask-extension": {
       "description": "Configuration settings for 'orchestration'/'activity' triggers.",
       "type": "object",
@@ -417,7 +454,7 @@
           "type": "object",
           "properties": {
             "http": { "$ref": "#/definitions/http-extension" },
-            "queues": { "$ref": "#/definitions/queues-extension" },
+            "queues": { "$ref": "#/definitions/queues-extension-v2" },
             "serviceBus": {
               "description": "Configuration settings for 'serviceBus' triggers.",
               "type": "object",
