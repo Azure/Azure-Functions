@@ -1,4 +1,4 @@
-﻿{
+{
   "title": "JSON schema for Azure Functions host.json files",
   "$schema": "http://json-schema.org/draft-04/schema#",
   "type": "object",
@@ -483,8 +483,9 @@
                       "type": "boolean",
                       "default": true
                     }
-                  }
-                }
+                  },
+                  "additionalProperties": false
+                }                
               },
               "additionalProperties": false
             },
