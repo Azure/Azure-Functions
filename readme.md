@@ -58,6 +58,8 @@ Before filing an issue, please check that it doesn't already exist. If you're no
  - [Azure Functions Host](https://github.com/Azure/azure-functions-host/) - the Azure Functions runtime/host
  - [Azure WebJobs SDK](https://github.com/Azure/azure-webjobs-sdk/) - the "core" of the Azure Functions runtime and many bindings
  - [Azure WebJobs SDK extensions](https://github.com/Azure/azure-webjobs-sdk-extensions/) - the repositories of many bindings
+ - [Durable Functions](https://github.com/Azure/azure-functions-durable-extension/) - the Durable Functions binding extension
+ - [Durable Functions for JavaScript](https://github.com/Azure/azure-functions-durable-js) - the durable-functions npm module
  - [Azure Functions Core Tools](https://github.com/Azure/azure-functions-core-tools) - the command line tool for Azure Functions
  - [Azure Functions NodeJS Worker](https://github.com/Azure/azure-functions-nodejs-worker) - support for running JavaScript functions
  - [Azure Functions Java Worker](https://github.com/Azure/azure-functions-java-worker) - support for running Java functions
@@ -69,18 +71,21 @@ Before filing an issue, please check that it doesn't already exist. If you're no
  
 ### Documentation
 
- - [Azure Functions Overview](https://azure.microsoft.com/en-us/documentation/articles/functions-overview/)
- - [Azure Functions Concepts](https://azure.microsoft.com/en-us/documentation/articles/functions-reference/)
- - [Azure Functions C# developer reference](https://azure.microsoft.com/en-us/documentation/articles/functions-reference-csharp/)
- - [Azure Functions Node.js developer reference](https://azure.microsoft.com/en-us/documentation/articles/functions-reference-node/)
- - [Azure Functions bindings & triggers](https://azure.microsoft.com/en-us/documentation/articles/functions-triggers-bindings/)
- - [Azure Functions getting started](https://azure.microsoft.com/en-us/documentation/articles/functions-create-first-azure-function/)
- - [Azure Functions sample: webhooks](https://azure.microsoft.com/en-us/documentation/articles/functions-create-a-web-hook-or-api-function/)
- - [Azure Functions sample: event processing](https://azure.microsoft.com/en-us/documentation/articles/functions-create-an-event-processing-function/)
- - [Azure Functions sample: azure services](https://azure.microsoft.com/en-us/documentation/articles/functions-create-an-azure-connected-function/)
- - [Testing an Azure Function](https://azure.microsoft.com/en-us/documentation/articles/functions-test-a-function/)
- - [Scaling a Function](https://azure.microsoft.com/en-us/documentation/articles/functions-scale/)
+ - [Azure Functions Overview](https://azure.microsoft.com/documentation/articles/functions-overview/)
+ - [Azure Functions Concepts](https://azure.microsoft.com/documentation/articles/functions-reference/)
+ - [Azure Functions C# developer reference](https://azure.microsoft.com/documentation/articles/functions-reference-csharp/)
+ - [Azure Functions Node.js developer reference](https://azure.microsoft.com/documentation/articles/functions-reference-node/)
+ - [Azure Functions bindings & triggers](https://azure.microsoft.com/documentation/articles/functions-triggers-bindings/)
+ - [Durable Functions Overview](https://docs.microsoft.com/azure/azure-functions/durable/durable-functions-overview
+ - [Azure Functions getting started](https://azure.microsoft.com/documentation/articles/functions-create-first-azure-function/)
+ - [Azure Functions sample: webhooks](https://azure.microsoft.com/documentation/articles/functions-create-a-web-hook-or-api-function/)
+ - [Azure Functions sample: event processing](https://azure.microsoft.com/documentation/articles/functions-create-an-event-processing-function/)
+ - [Azure Functions sample: azure services](https://azure.microsoft.com/documentation/articles/functions-create-an-azure-connected-function/)
+ - [Testing an Azure Function](https://azure.microsoft.com/documentation/articles/functions-test-a-function/)
+ - [Scaling a Function](https://azure.microsoft.com/documentation/articles/functions-scale/)
  - [Building the Azure Functions runtime locally](https://github.com/Azure/azure-webjobs-sdk-script/wiki)
  
 ### Samples
- - [List of samples](https://github.com/Azure/Azure-Functions/wiki/Samples-and-content)
+ - [Serverless Community Library](https://serverlesslibrary.net/)
+ - [Azure Functions samples](https://github.com/Azure/Azure-Functions/wiki/Samples-and-content)
+ - [Durable Functions samples](https://github.com/azure/azure-functions-durable-extension)
