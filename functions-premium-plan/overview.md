@@ -1,6 +1,6 @@
 # Overview - Azure Functions premium plan
 
-🚧 In order to use the Azure Functions Premium Plan private preview your subscription needs to be added to an allowlist.  Please apply for access via [http://aka.ms/functionspremium](http://aka.ms/functionspremium). 🚧
+Azure Functions Premium plan is now generally available.
 
 The Azure Functions premium plan is a new hosting option for function apps that provides premium features like VNet connectivity, no cold start, and premium hardware, without having to compromise on things like latency or scale.
 
