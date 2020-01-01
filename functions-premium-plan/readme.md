@@ -1,6 +1,6 @@
-# Azure Functions Premium Plan - Private Preview
+# Azure Functions Premium Plan
 
-🚧 In order to use the Azure Functions Premium Plan private preview your subscription needs to be added to an allowlist.  Please apply for access via [http://aka.ms/functionspremium](http://aka.ms/functionspremium). 🚧
+Azure Functions Premium plan is now generally available. 
 
 * [Overview](overview.md)
 * [Getting Started](getting-started.md)
