@@ -1,6 +1,6 @@
 # Getting Started - Azure Functions premium plan
 
-🚧 In order to use the Azure Functions Premium Plan private preview your subscription needs to be added to an allowlist.  Please apply for access via [http://aka.ms/functionspremium](http://aka.ms/functionspremium). 🚧
+Azure Functions Premium plan is now generally available.
 
 If you run into issues check our [troubleshooting docs](./troubleshooting.md)
 
@@ -8,13 +8,13 @@ If you run into issues check our [troubleshooting docs](./troubleshooting.md)
  
 Ensure your Azure CLI is 2.0.53 or higher if running locally.
 
-### 2. Install the preview CLI extension
+### 2. Install the CLI extension
 
 ```bash
 az extension add --source https://functionspremium.blob.core.windows.net/sdk/functionapp-0.0.1-py2.py3-none-any.whl
 ``` 
 
-**Note:** If you already have the functionapp extension installed you will need to remove it using ```az extension remove -n functionapp``` and then install the preview CLI extension above.
+**Note:** If you already have the functionapp extension installed you will need to remove it using ```az extension remove -n functionapp``` and then install the CLI extension above.
 
 
 ### 3. Create a resource group in supported region (optional)
