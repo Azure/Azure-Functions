@@ -60,6 +60,7 @@ Before filing an issue, please check that it doesn't already exist. If you're no
  - [Azure WebJobs SDK extensions](https://github.com/Azure/azure-webjobs-sdk-extensions/) - the repositories of many bindings
  - [Durable Functions](https://github.com/Azure/azure-functions-durable-extension/) - the Durable Functions binding extension
  - [Durable Functions for JavaScript](https://github.com/Azure/azure-functions-durable-js) - the durable-functions npm module
+ - [Durable Functions for Python](https://github.com/azure/azure-functions-durable-python) - the azure-functions-durable python pip package
  - [Azure Functions Core Tools](https://github.com/Azure/azure-functions-core-tools) - the command line tool for Azure Functions
  - [Azure Functions NodeJS Worker](https://github.com/Azure/azure-functions-nodejs-worker) - support for running JavaScript functions
  - [Azure Functions Java Worker](https://github.com/Azure/azure-functions-java-worker) - support for running Java functions
