@@ -18,7 +18,7 @@ If you would like documentation on the Functions runtime oriented towards contri
 
 If you have questions about Azure Functions, we encourage you to reach out to the community and Azure Functions dev team for help.
 
- - For all questions and technical help, [our MSDN forums](https://social.msdn.microsoft.com/Forums/azure/en-US/home?forum=AzureFunctions) are an easy place to have a conversation with our engineering team.
+ - For all questions and technical help, [our Microsoft Q&A](https://docs.microsoft.com/en-us/answers/topics/azure-functions.html) is an easy place to have a conversation with our engineering team.
  - For questions which fit the Stack Overflow format ("*how* does this work?"), we monitor the [azure-functions](http://stackoverflow.com/questions/tagged/azure-functions) tag.
  - You can also tweet/follow [@AzureFunctions](https://twitter.com/azurefunctions).
  
