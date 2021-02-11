@@ -1,4 +1,4 @@
-Use this repo to file issues in documentation, the Azure Portal or the Functions Visual Studio tooling. 
+Use this repo to file issues in documentation or the Functions Visual Studio tooling. 
 
 If you need technical help, you'll get the fastest response on the forums (https://social.msdn.microsoft.com/Forums/azure/en-US/home?forum=AzureFunctions) or Stack Overflow: http://stackoverflow.com/questions/tagged/azure-functions. The entire engineering team monitors those forums.
 
