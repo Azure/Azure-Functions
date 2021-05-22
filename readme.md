@@ -61,6 +61,7 @@ Before filing an issue, please check that it doesn't already exist. If you're no
  - [Durable Functions](https://github.com/Azure/azure-functions-durable-extension/) - the Durable Functions binding extension
  - [Durable Functions for JavaScript](https://github.com/Azure/azure-functions-durable-js) - the durable-functions npm module
  - [Azure Functions Core Tools](https://github.com/Azure/azure-functions-core-tools) - the command line tool for Azure Functions
+ - [Azure Functions .NET Worker](https://github.com/Azure/azure-functions-dotnet-worker) - support for running .NET isolated process functions
  - [Azure Functions NodeJS Worker](https://github.com/Azure/azure-functions-nodejs-worker) - support for running JavaScript functions
  - [Azure Functions Java Worker](https://github.com/Azure/azure-functions-java-worker) - support for running Java functions
  - [Azure Functions Python Worker](https://github.com/Azure/azure-functions-python-worker) - support for running Python functions
