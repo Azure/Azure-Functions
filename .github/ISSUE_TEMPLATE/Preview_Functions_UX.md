@@ -1,9 +1,9 @@
 ---
 name: UX Preview
 about: Create a report to help us improve
-title: "[UX] - "
-labels: UX_Preview
-assignees: btardif
+title: '[UX] - '
+labels: 'UX_Preview'
+assignees: 'btardif'
 
 ---
 
