@@ -1,6 +1,10 @@
 ---
-name: "Functions v4 Breaking Change Proposal"
-about: Required template for proposing a breaking change in Functions v4. See https://github.com/Azure/Azure-Functions/discussions/1909 for details.
+name: Functions v4 Breaking Change Proposal
+about: Required template for proposing a breaking change in Functions v4. See https://github.com/Azure/Azure-Functions/discussions/1909
+  for details.
+title: ''
+labels: 'Breaking Change: Proposal'
+assignees: ''
 
 ---
 
