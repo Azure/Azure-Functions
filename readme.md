@@ -78,7 +78,7 @@ Before filing an issue, please check that it doesn't already exist. If you're no
  - [Azure Functions Node.js developer reference](https://azure.microsoft.com/documentation/articles/functions-reference-node/)
  - [Azure Functions bindings & triggers](https://azure.microsoft.com/documentation/articles/functions-triggers-bindings/)
  - [Durable Functions Overview](https://docs.microsoft.com/azure/azure-functions/durable/durable-functions-overview/)
- - [Azure Functions getting started](https://azure.microsoft.com/documentation/articles/functions-create-first-azure-function/)
+ - [Azure Functions getting started](https://docs.microsoft.com/en-us/azure/azure-functions/functions-get-started)
  - [Azure Functions sample: webhooks](https://azure.microsoft.com/documentation/articles/functions-create-a-web-hook-or-api-function/)
  - [Azure Functions sample: event processing](https://azure.microsoft.com/documentation/articles/functions-create-an-event-processing-function/)
  - [Azure Functions sample: azure services](https://azure.microsoft.com/documentation/articles/functions-create-an-azure-connected-function/)
