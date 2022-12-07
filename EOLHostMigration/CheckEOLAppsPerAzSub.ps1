@@ -7,16 +7,17 @@ Set-AzContext -Subscription $Subscription | Out-Null
 
 $FunctionApps = Get-AzFunctionApp
 
-$AppInfo = @{} 
+$AppInfo = @{}
 
-foreach ($App in $FunctionApps){
-    if ($App.ApplicationSettings["FUNCTIONS_EXTENSION_VERSION"] -like '*3*')
-    {
-       $AppInfo.Add($App.Name, $App.ApplicationSettings["FUNCTIONS_EXTENSION_VERSION"]) 
-    }
+foreach ($App in $FunctionApps)
+{
+     if ($App.ApplicationSettings["FUNCTIONS_EXTENSION_VERSION"] -like '*3*')
+     {
+          $AppInfo.Add($App.Name, $App.ApplicationSettings["FUNCTIONS_EXTENSION_VERSION"])
+     }
 }
 
 $AppInfo
 $AppInfo.Count
 
-$AppInfo | Export-Csv -Path .\YourEOLApps.csv -NoTypeInformation
+$AppInfo | Export-Csv -Path "$PSScriptRoot\YourEOLApps.csv" -NoTypeInformation
