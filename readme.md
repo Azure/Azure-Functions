@@ -69,6 +69,8 @@ Before filing an issue, please check that it doesn't already exist. If you're no
  - [Azure Functions templates](https://github.com/azure/azure-functions-templates) - the templates which show up in the Azure Functions portal, Visual Studio, Visual Studio Code, etc
  - [Azure Functions samples](https://github.com/azure/azure-webjobs-sdk-script-samples) - repository for some samples on how the runtime works
  - [Azure Functions VS Tooling](https://github.com/Azure/azure-functions-vs-build-sdk) - msbuild tasks for precompiled functions
+ - [Azure Functons Extension Bundles](https://github.com/Azure/azure-functions-extension-bundles) - extension bundles for non .NET functions
+ - [Azure Functions Language Worker Protobuf](https://github.com/Azure/azure-functions-language-worker-protobuf) - protobuf definitions used by the host and language workers
  
 ### Documentation
 
