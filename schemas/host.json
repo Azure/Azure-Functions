@@ -251,7 +251,11 @@
       },
       "additionalProperties": false
     },
-
+    "functionAppName": {
+      "description": "The maximum length for an Azure Function App name, this is due to the fact that in the staging slot we need 6 extra characters for the 'staging' part.",
+      "type": "string",
+      "maxLength": 40
+    },
     "version-1": {
       "type": "object",
       "properties": {
