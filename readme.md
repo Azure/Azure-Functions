@@ -28,15 +28,27 @@ While we do our best to help out in a timely basis, we don't have any promise ar
 
 We track functional issues in a variety of places for Azure Functions. If you have found an issue or have a feature request, please submit an issue to the below repositories.
 
+> [!IMPORTANT]
+> **Have a platform-level issue?** GitHub issues are for clear, reproducible bugs and feature requests in the code owned by the repositories below. They are **not** the right place for Azure Functions platform-level concerns, such as:
+> - Deployments (including remote build, OneDeploy, `RuntimeFailed`/`ExpectationFailed` controller errors)
+> - Scaling, cold start, or instance/availability behavior
+> - ARM / control plane operations, provisioning, or configuration
+> - Portal, billing, quotas, networking, or storage infrastructure
+>
+> For these concerns, please open a formal [Azure support case](https://learn.microsoft.com/azure/azure-portal/supportability/how-to-create-azure-support-request) so the appropriate team can investigate with access to your resources and telemetry. Support cases are the fastest path to resolution and let us handle resource-specific data privately. Platform issues opened on GitHub will typically be redirected to support.
+
 |Item|Description|Link|
 |----|-----|-----|
 |Documentation|Docs for Azure Functions features + getting started|[File an Issue](https://github.com/azure/azure-functions/issues)|
 |Runtime|Script Host, Triggers & Bindings, Language Support|[File an Issue](https://github.com/Azure/azure-functions-host/issues)|
 |Core Tools|Command line interface for local development|[File an Issue](https://github.com/Azure/azure-functions-core-tools/issues)|
 |Dev Tools|Visual Studio and VS Code|[File an Issue](https://github.com/Azure/azure-functions/issues)|
-|Portal|User Interface or Experience Issue|[File an Issue](https://github.com/azure/azure-functions-ux/issues)|
+|Portal|User Interface or Experience Issue|[File an Issue](https://github.com/Azure/azure-functions/issues)|
 |Templates|Code Issues with Creation Template|[File an Issue](https://github.com/Azure/azure-functions-templates/issues)|
 |Azure CLI|Create and manage function apps in Azure (`az functionapp`) | [File and Issue](https://github.com/Azure/azure-cli/issues) |
+
+> [!NOTE]
+> The table above lists the most common areas. If your issue is with a **binding/trigger extension** (for example Storage, Event Grid, Event Hubs, Service Bus, Cosmos DB, Timer, or Durable Functions) or another part of the product not listed here, find the owning repository in the [GitHub repositories](#github-repositories) list below and file your issue there.
 
 Before filing an issue, please check that it doesn't already exist. If you're not sure if you should file an issue, you can open up an [MSDN forum question](https://social.msdn.microsoft.com/Forums/azure/en-US/home?forum=AzureFunctions). We also have a [uservoice feedback site](https://feedback.azure.com/forums/355860-azure-functions) which we can track your feature requests through.
 
@@ -56,8 +68,9 @@ Before filing an issue, please check that it doesn't already exist. If you're no
 ### GitHub repositories
 
  - [Azure Functions Host](https://github.com/Azure/azure-functions-host/) - the Azure Functions runtime/host
- - [Azure WebJobs SDK](https://github.com/Azure/azure-webjobs-sdk/) - the "core" of the Azure Functions runtime and many bindings
- - [Azure WebJobs SDK extensions](https://github.com/Azure/azure-webjobs-sdk-extensions/) - the repositories of many bindings
+ - [Azure WebJobs SDK](https://github.com/Azure/azure-webjobs-sdk/) - the "core" of the Azure Functions runtime, providing the triggers and binding framework used by extensions
+ - [Azure WebJobs SDK extensions](https://github.com/Azure/azure-webjobs-sdk-extensions/) - contains several extensions, including TimerTrigger and CosmosDB
+ - [Azure SDK for .NET](https://github.com/Azure/azure-sdk-for-net) - the home for the Storage (Blobs, Queues, Tables), Event Grid, Event Hubs, and Service Bus extensions
  - [Durable Functions](https://github.com/Azure/azure-functions-durable-extension/) - the Durable Functions binding extension
  - [Durable Functions for JavaScript](https://github.com/Azure/azure-functions-durable-js) - the durable-functions npm module
  - [Azure Functions Core Tools](https://github.com/Azure/azure-functions-core-tools) - the command line tool for Azure Functions
@@ -65,12 +78,13 @@ Before filing an issue, please check that it doesn't already exist. If you're no
  - [Azure Functions NodeJS Worker](https://github.com/Azure/azure-functions-nodejs-worker) - support for running JavaScript functions
  - [Azure Functions Java Worker](https://github.com/Azure/azure-functions-java-worker) - support for running Java functions
  - [Azure Functions Python Worker](https://github.com/Azure/azure-functions-python-worker) - support for running Python functions
- - [Azure Functions UX](https://github.com/azure/azure-functions-ux) - the UX for the Functions development portal
  - [Azure Functions templates](https://github.com/azure/azure-functions-templates) - the templates which show up in the Azure Functions portal, Visual Studio, Visual Studio Code, etc
  - [Azure Functions samples](https://github.com/azure/azure-webjobs-sdk-script-samples) - repository for some samples on how the runtime works
  - [Azure Functions VS Tooling](https://github.com/Azure/azure-functions-vs-build-sdk) - msbuild tasks for precompiled functions
  - [Azure Functons Extension Bundles](https://github.com/Azure/azure-functions-extension-bundles) - extension bundles for non .NET functions
  - [Azure Functions Language Worker Protobuf](https://github.com/Azure/azure-functions-language-worker-protobuf) - protobuf definitions used by the host and language workers
+ - [Azure Functions MCP extension](https://github.com/Azure/azure-functions-mcp-extension) - an MCP extension allowing a Function app to act as a scalable remote MCP server
+ - [Azure Functions Connector Extension](https://github.com/Azure/azure-functions-connector-extension) - an extension for receiving webhook callbacks from managed connectors (Office 365, Teams, SharePoint, etc.).
  
 ### Documentation
 
