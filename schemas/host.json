@@ -396,6 +396,12 @@
           },
           "additionalProperties": false
         },
+        "telemetryMode": {
+          "description": "The telemetry mode to use for the Functions host.",
+          "type": "string",
+          "enum": ["ApplicationInsights", "OpenTelemetry"],
+          "default": "ApplicationInsights"
+        },
         "logging": {
           "description": "Configuration settings for logging.",
           "type": "object",
