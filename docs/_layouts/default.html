@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="{{ site.lang | default: 'en' | escape }}">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script>
+      (() => {
+        const param = new URLSearchParams(window.location.search).get("clawpilotTheme");
+        const theme =
+          param || (window.matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light");
+        document.documentElement.setAttribute("data-theme", theme);
+      })();
+    </script>
+    {% seo %}
+    {% feed_meta %}
+    <link rel="stylesheet" href="{{ '/assets/css/site.css' | relative_url }}">
+  </head>
+  <body>
+    <a class="skip-link" href="#content">Skip to content</a>
+    <header class="site-header">
+      <a class="site-title" href="{{ '/' | relative_url }}">{{ site.title | escape }}</a>
+      <nav aria-label="Main navigation">
+        <a href="{{ '/category/product/' | relative_url }}">Product</a>
+        <a href="{{ '/category/security/' | relative_url }}">Security</a>
+        <a href="{{ '/feed.xml' | relative_url }}">RSS</a>
+        <a href="https://learn.microsoft.com/azure/azure-functions/">Documentation</a>
+      </nav>
+    </header>
+    <main id="content" tabindex="-1">
+      {{ content }}
+    </main>
+    <footer>
+      <p><a href="https://github.com/Azure/Azure-Functions">GitHub</a> &middot;
+        <a href="https://privacy.microsoft.com/privacystatement">Privacy</a> &middot;
+        <a href="https://aka.ms/opensource/security/create-report">Report a vulnerability privately</a></p>
+      <p>For suspected vulnerabilities, contact MSRC rather than opening a public issue or blog post.</p>
+    </footer>
+  </body>
+</html>

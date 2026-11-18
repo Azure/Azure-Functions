@@ -1,3 +1,8 @@
 
 .DS_Store
 Functions Fox/.DS_Store
+docs/_site/
+docs/.jekyll-cache/
+docs/.jekyll-metadata
+docs/.bundle/
+docs/vendor/

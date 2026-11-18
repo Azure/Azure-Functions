@@ -4,6 +4,12 @@ Azure Functions is an event driven, compute-on-demand experience that extends th
 
 This repository acts as a directory for folks looking for the various resources we have for Azure Functions.
 
+## Azure Functions updates blog
+
+The GitHub Pages blog source is in [`docs/`](docs/). See the
+[publishing guide](docs/README.md) to preview the site, write product or public
+security updates, and enable Pages after review.
+
 ## Get Started with Azure Functions
 
 To get started with Azure Functions, you can visit [functions.azure.com](https://functions.azure.com) and click on the green Get Started button. If you need a trial Azure subscription, there is also a link on that page.
