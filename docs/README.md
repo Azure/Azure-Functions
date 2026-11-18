@@ -50,26 +50,26 @@ For substantive edits to an existing post, add a quoted ISO 8601
 `last_modified_at` timestamp and explain the correction in the article. Keep the
 filename and URL stable so existing links and feed entries continue to work.
 
-## Enable GitHub Pages later
+## Build and deployment
 
-Pages has deliberately not been enabled by this local setup.
+The site is published by the GitHub Actions workflow
+[`.github/workflows/pages.yml`](../.github/workflows/pages.yml). In
+**Settings > Pages**, **Build and deployment > Source** must be set to
+**GitHub Actions**.
 
-After review and merge into `main`, a repository administrator can:
+- Pull requests that change `docs/**` build the site as a check, without deploying.
+- Merges to `main` that change `docs/**` build and deploy the site.
+- **Actions > Updates blog (GitHub Pages) > Run workflow** redeploys manually,
+  for example to publish a future-dated post after its date.
 
-1. Open **Settings > Pages**.
-2. Under **Build and deployment**, select **Deploy from a branch**.
-3. Select branch **main** and folder **/docs**, then save.
-4. Wait for the Pages build/deployment to finish and use the URL shown in Settings.
+The site is served at <https://azure.github.io/Azure-Functions/>. If a custom
+domain is configured, update `url` and `baseurl` in `_config.yml` to match.
 
-The expected default URL is <https://azure.github.io/Azure-Functions/>. If GitHub
-shows a different URL, or a custom domain is configured, update `url` and
-`baseurl` in `_config.yml` to match. Organization policy may require an
-administrator to allow Pages first.
-
-Subsequent merged post changes trigger GitHub's built-in Jekyll build and Pages
-deployment. No custom deployment workflow, personal access token, or Azure
-resources are required. The Gemfile pins the Jekyll/plugin release lines for
-local previews; branch-based Pages uses GitHub's managed dependency versions.
+The workflow uses `actions/jekyll-build-pages`, which builds with GitHub Pages'
+managed dependency versions and ignores the Gemfile. The Gemfile pins the same
+Jekyll/plugin release lines for local previews. No personal access token or
+Azure resources are required. Restrict the `github-pages` environment to the
+`main` branch under **Settings > Environments**.
 
 Use existing branch protection or rulesets to require pull-request review on
 `main`. This setup does not change repository protections, assign reviewers, or
