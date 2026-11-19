@@ -21,7 +21,7 @@ The following status is pending confirmation:
 | Azure Functions - Linux App Service | Rollout completed. |
 | Azure Functions - Linux Consumption | Rollout completed. |
 | Azure Functions - Linux Elastic Premium | Rollout completed. |
-| Azure Functions for Windows | Rollout started; confirm current status. |
+| Azure Functions for Windows | Rollout started; update coming soon! |
 
 This status applies to platform-managed Java runtimes. If your application
 bundles its own Java runtime or runs in a custom container, you are responsible
