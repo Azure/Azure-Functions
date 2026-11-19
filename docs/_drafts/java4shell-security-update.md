@@ -18,10 +18,11 @@ The following status is pending confirmation:
 
 | Platform | Availability of the update |
 |---|---|
-| Azure Functions for Linux | Rollout started; confirm current status. |
+| Azure Functions - Flex Consumption | Rollout completed. |
+| Azure Functions - Linux App Service | Rollout completed. |
+| Azure Functions - Linux Consumption | Rollout completed. |
+| Azure Functions - Linux Elastic Premium | Rollout completed. |
 | Azure Functions for Windows | Rollout started; confirm current status. |
-
-The expected rollout completion date is **TBD**.
 
 This status applies to platform-managed Java runtimes. If your application
 bundles its own Java runtime or runs in a custom container, you are responsible
