@@ -1,9 +1,10 @@
 # Publishing Azure Functions updates
 
 This directory is a Jekyll blog compatible with GitHub Pages. Posts are Markdown,
-reviewed through pull requests. The site has product and security archives, an
-Atom feed at `feed.xml`, and search/social metadata. No announcements are
-published by this initial setup.
+reviewed through pull requests. Like the App Service team blog, the homepage lists
+recent posts with dates, authors, reading times, and excerpts. Top navigation
+groups articles by three reserved tags: **product**, **security**, and **engineering**.
+The site also has an Atom feed at `feed.xml` and search/social metadata.
 
 ## Preview locally
 
@@ -15,31 +16,46 @@ bundle install
 bundle exec jekyll serve --host 127.0.0.1
 ```
 
-Open <http://127.0.0.1:4000/Azure-Functions/>. To preview unpublished drafts,
-add `--drafts` to the serve command. Do not use that flag for production builds.
+Open <http://127.0.0.1:4000/Azure-Functions/>.
 For a one-time production build, run `bundle exec jekyll build --strict_front_matter`.
 Generated output is in `_site/` and must not be committed.
 
 ## Write an update
 
-1. Copy `_drafts/example-update.md` to `_posts/YYYY-MM-DD-short-title.md`.
-   Create `_posts/` when publishing the first update.
-2. Replace the template text and front matter. Set `categories: [product]` or
-   `categories: [security]`, or both. Add a new category page before using any
-   other category.
-3. Use a publication date in UTC. For precise timing, add a quoted front-matter
-   `date`, for example `date: "2026-12-01 15:00:00 +0000"`. Future-dated posts
-   are excluded; they become visible on the first site rebuild after their date,
-   not automatically at that time.
-4. Preview the page, links, category archive, and feed. For images, place files in
+1. Add a file named `_posts/YYYY-MM-DD-short-title.md`. All articles belong in
+   `_posts/`; there is no drafts folder or separate draft-preview mode.
+2. Use the template below. Include at least one reserved tag: `product` for
+   product announcements, `security` for public security updates, or `engineering`
+   for technical deep dives. Multiple reserved tags list the article in multiple
+   tabs. Additional descriptive tags are allowed but do not create navigation tabs.
+3. Use a current or past publication date in UTC. Future-dated posts and
+   `published: false` are rejected by the build check because Jekyll hides them.
+   Keep work in a pull request until it is ready to publish.
+4. Preview the page, topic archive, and feed. For images, place files in
    `assets/images/` and use `{{ '/assets/images/file.png' | relative_url }}` in
    Markdown links. Use `relative_url` for internal links so the repository path
    works locally and on Pages.
 5. Open a pull request and obtain the appropriate editorial/product review.
    Merge only when the announcement is approved for public release.
 
-Drafts and pull requests in this public repository are **public**, even though
-`_drafts/` is excluded from the generated site. Never put confidential plans,
+```markdown
+---
+title: "Your announcement title"
+description: "A short summary for the homepage and search engines."
+author: "Your name"
+tags: [product]
+---
+
+Describe what changed, who is affected, and any action required.
+Link to the relevant documentation or published advisory.
+```
+
+For example, `_posts/2026-11-19-java4shell-security-update.md` is published at
+`/Azure-Functions/2026/11/19/java4shell-security-update/`, on the homepage, in the
+Security tab, and in the RSS feed. Use lowercase tag names exactly as shown above;
+`categories` does not control the tabs.
+
+Pull requests in this public repository are **public**. Never put confidential plans,
 embargoed announcements, credentials, or undisclosed vulnerabilities here.
 Follow [SECURITY.md](../SECURITY.md) and coordinate security communications with
 MSRC before publishing. Link to approved public advisories rather than using
@@ -58,9 +74,15 @@ The site is published by the GitHub Actions workflow
 
 - Pull requests that change `docs/**` build the site and upload a preview artifact,
   without deploying.
-- Merges to `main` that change `docs/**` build and deploy the site.
-- **Actions > Updates blog (GitHub Pages) > Run workflow** redeploys manually,
-  for example to publish a future-dated post after its date.
+- Merges to `main` that change `docs/**` immediately build and deploy the site.
+- **Actions > Updates blog (GitHub Pages) > Run workflow** redeploys manually.
+
+After building, the workflow runs
+`bundle exec ruby ../.github/scripts/validate-blog.rb ../_site` from `docs/`.
+This rejects drafts, excluded posts, and missing reserved tags, and checks that
+every article appears on the homepage and exactly the topic archives it is tagged
+with. Run the same command locally after building to `../_site`, or omit the
+destination argument to check the default `docs/_site/` output.
 
 The expected site URL is <https://azure.github.io/Azure-Functions/>. If a custom
 domain is configured, update `url` and `baseurl` in `_config.yml` to match.

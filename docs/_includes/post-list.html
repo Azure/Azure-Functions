@@ -2,14 +2,10 @@
   <ul class="post-list">
     {% for post in include.posts %}
       <li>
-        <p class="post-meta"><time datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date: "%B %-d, %Y" }}</time></p>
         <h2><a href="{{ post.url | relative_url }}">{{ post.title | escape }}</a></h2>
-        {% if post.description %}<p>{{ post.description | escape }}</p>{% endif %}
-        <p class="categories">
-          {% for category in post.categories %}
-            <a href="{{ '/category/' | append: category | append: '/' | relative_url }}">{{ category | capitalize | escape }}</a>
-          {% endfor %}
-        </p>
+        {% include post-meta.html post=post %}
+        <p class="post-summary">{{ post.description | default: post.excerpt | strip_html | normalize_whitespace | truncate: 240 | escape }}</p>
+        {% include post-topics.html post=post %}
       </li>
     {% endfor %}
   </ul>

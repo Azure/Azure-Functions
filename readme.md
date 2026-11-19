@@ -7,8 +7,10 @@ This repository acts as a directory for folks looking for the various resources 
 ## Azure Functions updates blog
 
 The GitHub Pages blog source is in [`docs/`](docs/). See the
-[publishing guide](docs/README.md) to preview the site and write product or public
-security updates. Changes merged to `main` are published by GitHub Actions.
+[publishing guide](docs/README.md) to preview the site and add articles to
+`docs/_posts/`. Use the reserved `product`, `security`, and `engineering` tags
+to place articles in the top navigation tabs. Changes merged to `main` are
+published by GitHub Actions.
 
 ## Get Started with Azure Functions
 
