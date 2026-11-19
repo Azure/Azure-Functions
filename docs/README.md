@@ -7,8 +7,7 @@ published by this initial setup.
 
 ## Preview locally
 
-Use Ruby 3.1 or later and Bundler (the repository also works with the older
-Jekyll 3.10 version used by GitHub Pages):
+Use Ruby 3.3 or later and Bundler (the workflow uses Ruby 3.3):
 
 ```sh
 cd docs
@@ -57,20 +56,22 @@ The site is published by the GitHub Actions workflow
 **Settings > Pages**, **Build and deployment > Source** must be set to
 **GitHub Actions**.
 
-- Pull requests that change `docs/**` build the site as a check, without deploying.
+- Pull requests that change `docs/**` build the site and upload a preview artifact,
+  without deploying.
 - Merges to `main` that change `docs/**` build and deploy the site.
 - **Actions > Updates blog (GitHub Pages) > Run workflow** redeploys manually,
   for example to publish a future-dated post after its date.
 
-The site is served at <https://azure.github.io/Azure-Functions/>. If a custom
+The expected site URL is <https://azure.github.io/Azure-Functions/>. If a custom
 domain is configured, update `url` and `baseurl` in `_config.yml` to match.
 
-The workflow uses `actions/jekyll-build-pages`, which builds with GitHub Pages'
-managed dependency versions and ignores the Gemfile. The Gemfile pins the same
-Jekyll/plugin release lines for local previews. No personal access token or
-Azure resources are required. Restrict the `github-pages` environment to the
-`main` branch under **Settings > Environments**.
+The workflow builds using the versions locked in `Gemfile.lock`, the same as
+local previews. No personal access token or Azure resources are required.
+Restrict the `github-pages` environment to the `main` branch under
+**Settings > Environments**.
 
-Use existing branch protection or rulesets to require pull-request review on
-`main`. This setup does not change repository protections, assign reviewers, or
-enforce security approval. Those policies must be configured by maintainers.
+The blog, deployment workflow, and CODEOWNERS file have designated code owners.
+Require code-owner reviews in branch protection to enforce approval by at least
+one owner. The CODEOWNERS file applies to pull requests after it is merged to
+their base branch. Security announcements still require the appropriate MSRC
+coordination; code-owner approval alone does not enforce that process.

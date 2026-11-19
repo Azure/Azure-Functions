@@ -26,13 +26,22 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v5
-      - name: Setup Pages
-        uses: actions/configure-pages@v5
-      - name: Build with Jekyll
-        uses: actions/jekyll-build-pages@v1
+      - name: Set up Ruby
+        uses: ruby/setup-ruby@v1
         with:
-          source: ./docs
-          destination: ./_site
+          ruby-version: "3.3"
+          bundler-cache: true
+          working-directory: docs
+      - name: Build with Jekyll
+        working-directory: docs
+        run: bundle exec jekyll build --destination ../_site --strict_front_matter
+      - name: Upload preview
+        if: github.event_name == 'pull_request'
+        uses: actions/upload-artifact@v4
+        with:
+          name: updates-blog-preview
+          path: ./_site
+          if-no-files-found: error
       - name: Upload artifact
         if: github.event_name != 'pull_request'
         uses: actions/upload-pages-artifact@v4
