@@ -1,0 +1,29 @@
+title: Azure Functions updates
+description: Product news and public security updates from the Azure Functions team.
+url: https://azure.github.io
+baseurl: /Azure-Functions
+lang: en
+timezone: Etc/UTC
+markdown: kramdown
+highlighter: rouge
+permalink: /:year/:month/:day/:title/
+future: false
+strict_front_matter: true
+plugins:
+  - jekyll-feed
+  - jekyll-seo-tag
+defaults:
+  - scope:
+      path: ""
+    values:
+      layout: default
+  - scope:
+      path: ""
+      type: posts
+    values:
+      layout: post
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - README.md
+  - vendor

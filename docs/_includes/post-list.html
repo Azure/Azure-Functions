@@ -1,0 +1,18 @@
+{% if include.posts.size > 0 %}
+  <ul class="post-list">
+    {% for post in include.posts %}
+      <li>
+        <p class="post-meta"><time datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date: "%B %-d, %Y" }}</time></p>
+        <h2><a href="{{ post.url | relative_url }}">{{ post.title | escape }}</a></h2>
+        {% if post.description %}<p>{{ post.description | escape }}</p>{% endif %}
+        <p class="categories">
+          {% for category in post.categories %}
+            <a href="{{ '/category/' | append: category | append: '/' | relative_url }}">{{ category | capitalize | escape }}</a>
+          {% endfor %}
+        </p>
+      </li>
+    {% endfor %}
+  </ul>
+{% else %}
+  <p>No updates have been published here yet. Subscribe to <a href="{{ '/feed.xml' | relative_url }}">RSS</a> to follow future posts.</p>
+{% endif %}
