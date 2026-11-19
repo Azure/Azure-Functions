@@ -1,5 +1,6 @@
-title: Azure Functions updates
-description: Product news and public security updates from the Azure Functions team.
+title: Azure Functions
+subtitle: Team blog
+description: Product announcements, security updates, and engineering stories from the Azure Functions team.
 url: https://azure.github.io
 baseurl: /Azure-Functions
 lang: en
@@ -9,6 +10,16 @@ highlighter: rouge
 permalink: /:year/:month/:day/:title/
 future: false
 strict_front_matter: true
+blog_topics:
+  - tag: product
+    title: Product
+    url: /category/product/
+  - tag: security
+    title: Security
+    url: /category/security/
+  - tag: engineering
+    title: Engineering
+    url: /category/engineering/
 plugins:
   - jekyll-feed
   - jekyll-seo-tag

@@ -1,7 +1,7 @@
 ---
 layout: category
 title: Security updates
-category: security
+topic: security
 permalink: /category/security/
 ---
 Published security guidance and advisories for Azure Functions.

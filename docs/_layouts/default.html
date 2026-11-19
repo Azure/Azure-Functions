@@ -18,13 +18,24 @@
   <body>
     <a class="skip-link" href="#content">Skip to content</a>
     <header class="site-header">
-      <a class="site-title" href="{{ '/' | relative_url }}">{{ site.title | escape }}</a>
-      <nav aria-label="Main navigation">
-        <a href="{{ '/category/product/' | relative_url }}">Product</a>
-        <a href="{{ '/category/security/' | relative_url }}">Security</a>
-        <a href="{{ '/feed.xml' | relative_url }}">RSS</a>
-        <a href="https://learn.microsoft.com/azure/azure-functions/">Documentation</a>
-      </nav>
+      <div class="header-content">
+        <div class="masthead">
+          <a class="site-title" href="{{ '/' | relative_url }}">
+            {{ site.title | escape }}
+            <span class="site-subtitle">{{ site.subtitle | escape }}</span>
+          </a>
+          <nav class="site-links" aria-label="Resources">
+            <a href="https://learn.microsoft.com/azure/azure-functions/">Documentation</a>
+            <a href="{{ '/feed.xml' | relative_url }}">RSS</a>
+          </nav>
+        </div>
+        <nav class="topic-nav" aria-label="Blog topics">
+          <a href="{{ '/' | relative_url }}"{% if page.url == '/' %} aria-current="page"{% endif %}>All posts</a>
+          {% for topic in site.blog_topics %}
+            <a href="{{ topic.url | relative_url }}"{% if page.topic == topic.tag %} aria-current="page"{% endif %}>{{ topic.title | escape }}</a>
+          {% endfor %}
+        </nav>
+      </div>
     </header>
     <main id="content" tabindex="-1">
       {{ content }}

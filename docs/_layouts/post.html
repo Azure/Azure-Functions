@@ -5,20 +5,8 @@ layout: default
   <header>
     <p><a href="{{ '/' | relative_url }}">All updates</a></p>
     <h1>{{ page.title | escape }}</h1>
-    <p class="post-meta">
-      <time datetime="{{ page.date | date_to_xmlschema }}">{{ page.date | date: "%B %-d, %Y" }}</time>
-      {% if page.author %} &middot; {{ page.author | escape }}{% endif %}
-      {% if page.last_modified_at %}
-        &middot; Updated <time datetime="{{ page.last_modified_at | date_to_xmlschema }}">{{ page.last_modified_at | date: "%B %-d, %Y" }}</time>
-      {% endif %}
-    </p>
-    {% if page.categories.size > 0 %}
-      <p class="categories">
-        {% for category in page.categories %}
-          <a href="{{ '/category/' | append: category | append: '/' | relative_url }}">{{ category | capitalize | escape }}</a>
-        {% endfor %}
-      </p>
-    {% endif %}
+    {% include post-meta.html post=page %}
+    {% include post-topics.html post=page %}
   </header>
   <div class="post-content">{{ content }}</div>
 </article>

@@ -1,0 +1,7 @@
+<p class="topic-tags">
+  {% for topic in site.blog_topics %}
+    {% if include.post.tags contains topic.tag %}
+      <a href="{{ topic.url | relative_url }}">{{ topic.title | escape }}</a>
+    {% endif %}
+  {% endfor %}
+</p>

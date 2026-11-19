@@ -1,0 +1,10 @@
+{% assign word_count = include.post.content | strip_html | number_of_words %}
+{% assign minutes = word_count | plus: 199 | divided_by: 200 | at_least: 1 %}
+<p class="post-meta">
+  {{ minutes }} min read
+  {% if include.post.author %} &middot; By {{ include.post.author | escape }}{% endif %}
+  &middot; <time datetime="{{ include.post.date | date_to_xmlschema }}">{{ include.post.date | date: "%B %-d, %Y" }}</time>
+  {% if include.post.last_modified_at %}
+    &middot; Updated <time datetime="{{ include.post.last_modified_at | date_to_xmlschema }}">{{ include.post.last_modified_at | date: "%B %-d, %Y" }}</time>
+  {% endif %}
+</p>

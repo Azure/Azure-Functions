@@ -6,10 +6,12 @@ on:
     paths:
       - "docs/**"
       - ".github/workflows/pages.yml"
+      - ".github/scripts/validate-blog.rb"
   pull_request:
     paths:
       - "docs/**"
       - ".github/workflows/pages.yml"
+      - ".github/scripts/validate-blog.rb"
   workflow_dispatch:
 
 permissions:
@@ -35,6 +37,9 @@ jobs:
       - name: Build with Jekyll
         working-directory: docs
         run: bundle exec jekyll build --destination ../_site --strict_front_matter
+      - name: Verify published posts and topic tabs
+        working-directory: docs
+        run: bundle exec ruby ../.github/scripts/validate-blog.rb ../_site
       - name: Upload preview
         if: github.event_name == 'pull_request'
         uses: actions/upload-artifact@v7

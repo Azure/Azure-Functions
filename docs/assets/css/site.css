@@ -52,10 +52,8 @@ html[data-theme="dark"] {
 }
 * { box-sizing: border-box; }
 body {
-  max-width: 960px;
-  margin: 0 auto;
-  padding: 0 24px;
-  background: var(--cp-bg);
+  margin: 0;
+  background: var(--cp-surface);
   color: var(--cp-text);
   font-family: "Segoe UI", Aptos, Calibri, -apple-system, BlinkMacSystemFont, sans-serif;
   line-height: 1.65;
@@ -64,19 +62,28 @@ body {
 a { color: var(--cp-link); text-underline-offset: 3px; }
 a:hover { color: var(--cp-accent-hover); }
 a:focus-visible { outline: 3px solid var(--cp-accent); outline-offset: 4px; }
-.site-header { padding: 32px 0 24px; border-bottom: 1px solid var(--cp-border); }
-.site-title { color: var(--cp-text); font-size: 1.25rem; font-weight: 700; text-decoration: none; }
-nav { display: flex; flex-wrap: wrap; gap: 12px 24px; margin-top: 16px; }
-main { min-height: 50vh; padding: 32px 0; }
+.site-header { border-bottom: 1px solid var(--cp-border); }
+.header-content, main, footer { max-width: 1120px; margin: 0 auto; padding-left: 32px; padding-right: 32px; }
+.masthead { display: flex; flex-wrap: wrap; justify-content: space-between; align-items: center; gap: 24px; padding: 28px 0; }
+.site-title { color: var(--cp-text); font-size: 1.75rem; font-weight: 700; text-decoration: none; line-height: 1.3; }
+.site-subtitle { display: block; color: var(--cp-text-muted); font-size: 1rem; margin-top: 4px; }
+.site-links { display: flex; gap: 24px; }
+.topic-nav { display: flex; flex-wrap: wrap; gap: 4px 24px; }
+.topic-nav a { padding: 12px 4px; color: var(--cp-text-muted); font-weight: 600; text-decoration: none; border-bottom: 3px solid var(--cp-border); }
+.topic-nav a:hover, .topic-nav a[aria-current="page"] { color: var(--cp-accent); border-color: var(--cp-accent); }
+main { min-height: 50vh; padding-top: 40px; padding-bottom: 48px; }
 h1, h2, h3 { line-height: 1.25; }
 h1 { font-size: clamp(2rem, 5vw, 2.75rem); }
 h2 { font-size: 1.5rem; }
-.post-list { list-style: none; padding: 0; display: grid; gap: 24px; }
-.post-list > li { padding: 24px; border: 1px solid var(--cp-border); border-radius: 16px; background: var(--cp-surface); }
-.post-list h2 { margin: 8px 0 16px; }
-.post-meta { color: var(--cp-text-muted); font-size: 0.9375rem; }
-.categories { display: flex; flex-wrap: wrap; gap: 8px; }
-.categories a { padding: 4px 12px; border-radius: 0.625rem; background: var(--cp-accent-soft); color: var(--cp-accent); }
+.intro { max-width: 800px; font-size: 1.125rem; }
+.section-title { margin: 40px 0 0; padding-bottom: 12px; border-bottom: 1px solid var(--cp-border); color: var(--cp-text-muted); font-size: 1.125rem; }
+.post-list { list-style: none; padding: 0; margin: 0; }
+.post-list > li { padding: 28px 0; border-bottom: 1px solid var(--cp-border); }
+.post-list h2 { margin: 0 0 8px; font-size: 1.75rem; }
+.post-meta { color: var(--cp-text-muted); font-size: 0.9375rem; margin: 8px 0; }
+.post-summary { margin: 12px 0; }
+.topic-tags { display: flex; flex-wrap: wrap; gap: 8px; }
+.topic-tags a { padding: 4px 12px; border-radius: 0.625rem; background: var(--cp-accent-soft); color: var(--cp-accent); font-size: 0.875rem; }
 .post-content { margin-top: 32px; }
 pre, code { font-family: Consolas, "Courier New", Courier, monospace; background: var(--cp-surface-soft); }
 code { padding: 2px 4px; }
@@ -86,6 +93,13 @@ img { max-width: 100%; height: auto; }
 table { display: block; max-width: 100%; overflow-x: auto; border-collapse: collapse; }
 th, td { padding: 8px 12px; border: 1px solid var(--cp-border); text-align: left; }
 blockquote { border-left: 4px solid var(--cp-border-strong); margin-left: 0; padding-left: 20px; color: var(--cp-text-muted); }
-footer { border-top: 1px solid var(--cp-border); padding: 24px 0; color: var(--cp-text-muted); font-size: 0.875rem; }
+footer { border-top: 1px solid var(--cp-border); padding-top: 24px; padding-bottom: 24px; color: var(--cp-text-muted); font-size: 0.875rem; }
 .skip-link { position: absolute; top: -100px; padding: 8px 16px; background: var(--cp-surface); }
 .skip-link:focus { top: 8px; }
+@media (max-width: 600px) {
+  .header-content, main, footer { padding-left: 20px; padding-right: 20px; }
+  .masthead { gap: 16px; }
+  .site-title { font-size: 1.5rem; }
+  .topic-nav { gap: 4px 16px; }
+  .post-list h2 { font-size: 1.5rem; }
+}
